@@ -71,7 +71,10 @@ public class Article implements Serializable {
      * 阅读量
      */
     private int viewNum;
-
+    /**
+     * 主题文章摘要，content截取字段，去除html代码
+     */
+    private String introduce;
 
 
     public static long getSerialVersionUID() {
@@ -180,6 +183,14 @@ public class Article implements Serializable {
 
     public void setCategoryName(String categoryName) {
         this.categoryName = categoryName;
+    }
+
+    public String getIntroduce() {
+        return introduce;
+    }
+
+    public void setIntroduce(String introduce) {
+        this.introduce = introduce;
     }
 
     @Override
