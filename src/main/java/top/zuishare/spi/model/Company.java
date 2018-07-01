@@ -71,6 +71,10 @@ public class Company implements Serializable{
 	 * 联系人Instagram地址
 	 */
 	private String contactUserinstagram;
+	/**
+	 * 联系人linkedin地址
+	 */
+	private String contactUserlinkedin;
 	
 	public String getName() {
 		return name;
@@ -159,6 +163,15 @@ public class Company implements Serializable{
 	public String getContactUserinstagram() {
 		return contactUserinstagram;
 	}
+
+	public String getContactUserlinkedin() {
+		return contactUserlinkedin;
+	}
+
+	public void setContactUserlinkedin(String contactUserlinkedin) {
+		this.contactUserlinkedin = contactUserlinkedin;
+	}
+
 	public void setContactUserinstagram(String contactUserinstagram) {
 		this.contactUserinstagram = contactUserinstagram;
 	}

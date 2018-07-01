@@ -19,6 +19,8 @@ public class WebConfig implements Serializable {
 	private Date updateTime;
 	//当前时间
 	private Date now;
+	//web site http url(domain name)
+	private String website;
 	
 	public String getKeyword() {
 		return keyword;
@@ -45,6 +47,14 @@ public class WebConfig implements Serializable {
 
 	public void setNow(Date now) {
 		this.now = now;
+	}
+
+	public String getWebsite() {
+		return website;
+	}
+
+	public void setWebsite(String website) {
+		this.website = website;
 	}
 
 	@Override

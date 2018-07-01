@@ -27,10 +27,6 @@ public class Column implements Serializable{
 	 */
 	private String enName;
 	/**
-	 * 栏目跳转url
-	 */
-	private String url;
-	/**
 	 * 父栏目
 	 */
 	private Integer parentId;
@@ -91,12 +87,6 @@ public class Column implements Serializable{
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	public String getUrl() {
-		return url;
-	}
-	public void setUrl(String url) {
-		this.url = url;
 	}
 	public Integer getPriority() {
 		return priority;
