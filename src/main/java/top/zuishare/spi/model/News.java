@@ -68,9 +68,13 @@ public class News implements Serializable {
 	 */
 	private String depth;
 	
-	
 	//临时变量
 	private String columnName;
+	
+	/**
+	 * 新闻前几百个文字的缩略，去除html代码
+	 */
+	private String bref;
 	
 	public News(){}
 	
@@ -158,6 +162,15 @@ public class News implements Serializable {
 	public void setColumnName(String columnName) {
 		this.columnName = columnName;
 	}
+	
+	public String getBref() {
+		return bref;
+	}
+
+	public void setBref(String bref) {
+		this.bref = bref;
+	}
+
 	@Override
 	public String toString() {
 		return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
