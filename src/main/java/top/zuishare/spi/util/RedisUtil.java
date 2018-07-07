@@ -180,6 +180,7 @@ public class RedisUtil {
                 .append(cateId)
                 .append(Constants.KEYDELIMITER)
                 .append(Constants.ID)
+                .append(Constants.KEYDELIMITER)
                 .append(Constants.PRODUCTCLASS)
                 .append(Constants.KEYDELIMITER)
                 .append(Constants.REDIS_LIST_KEY)
@@ -194,20 +195,24 @@ public class RedisUtil {
     public static String getProductDetailKey(int productId) {
         return new StringBuilder()
                 .append(Constants.PRODUCTCLASS)
+                .append(Constants.KEYDELIMITER)
                 .append(productId)
+                .append(Constants.KEYDELIMITER)
                 .append(Constants.ID)
                 .toString();
     }
 
     /**
      * 获取新闻详情key
-     * product:5:id
+     * news:5:id
      * @return
      */
     public static String getNewsDetailKey(int newsId) {
         return new StringBuilder()
                 .append(Constants.NEWSCLASS)
+                .append(Constants.KEYDELIMITER)
                 .append(newsId)
+                .append(Constants.KEYDELIMITER)
                 .append(Constants.ID)
                 .toString();
     }
