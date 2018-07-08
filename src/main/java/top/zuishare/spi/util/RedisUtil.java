@@ -325,4 +325,17 @@ public class RedisUtil {
                 .toString();
     }
 
+    /**
+     * 获取通用的自增key
+     * autoIncrease:id
+     * @return
+     */
+    public static String getGenerateIncreaseKey() {
+        return new StringBuilder()
+                .append("autoIncrease")
+                .append(Constants.KEYDELIMITER)
+                .append(Constants.ID)
+                .toString();
+    }
+
 }
