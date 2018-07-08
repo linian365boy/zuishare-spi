@@ -309,4 +309,20 @@ public class RedisUtil {
                 .toString();
     }
 
+    /**
+     * 获取info key，根据code
+     * info:aboutUs:code
+     * @param code
+     * @return
+     */
+    public static String getInfoKeyByCode(String code) {
+        return new StringBuilder()
+                .append(Constants.INFOCLASS)
+                .append(Constants.KEYDELIMITER)
+                .append(code)
+                .append(Constants.KEYDELIMITER)
+                .append(Constants.CODE_STR)
+                .toString();
+    }
+
 }

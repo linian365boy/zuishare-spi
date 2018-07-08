@@ -89,6 +89,8 @@ public class Constants {
 
     public static final String COLUMNCLASS = "column";
 
+    public static final String INFOCLASS = "info";
+
     public static final String NEWSCLASS = "news";
 
     public static final String CATEGORYCLASS = "category";
