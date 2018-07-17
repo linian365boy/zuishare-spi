@@ -41,6 +41,10 @@ public class Category implements Serializable{
 	private Integer columnId;
 	//备注
 	private String remark;
+	/**
+	 * 排序号
+	 */
+	private int priority;
 	
 	//临时变量
 	private transient long productsSize;
@@ -50,7 +54,7 @@ public class Category implements Serializable{
 	private String columnName;
 	//子分类
 	private transient Set<Category> children;
-	
+
 	//使用mybatis resuleMap的setter getter方式注入属性，必须要有一个空参数的构造方法
 	public Category(){}
 	
@@ -59,7 +63,15 @@ public class Category implements Serializable{
 		this.name = name;
 		this.enName = enName;
 	}
-	
+
+	public int getPriority() {
+		return priority;
+	}
+
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
+
 	public Integer getId() {
 		return id;
 	}

@@ -338,4 +338,19 @@ public class RedisUtil {
                 .toString();
     }
 
+    /**
+     * 获取热门产品列表
+     * product:hot:list
+     * @return
+     */
+    public static String getHotProductsKey(){
+        return new StringBuilder()
+                .append(Constants.PRODUCTCLASS)
+                .append(Constants.KEYDELIMITER)
+                .append("hot")
+                .append(Constants.KEYDELIMITER)
+                .append(Constants.REDIS_LIST_KEY)
+                .toString();
+    }
+
 }
