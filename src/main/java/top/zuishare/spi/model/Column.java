@@ -33,7 +33,7 @@ public class Column implements Serializable{
 	/**
 	 * 优先值（排序用），越大排名越前，默认为0
 	 */
-	private Integer priority;
+	private int priority;
 	/**
 	 * 创建日期
 	 */
@@ -88,10 +88,10 @@ public class Column implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Integer getPriority() {
+	public int getPriority() {
 		return priority;
 	}
-	public void setPriority(Integer priority) {
+	public void setPriority(int priority) {
 		this.priority = priority;
 	}
 	public Date getCreateDate() {

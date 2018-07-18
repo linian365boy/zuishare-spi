@@ -33,7 +33,7 @@ public class Advertisement implements Serializable {
 	 * 广告排名
 	 * 越大排名越前
 	 */
-	private Integer priority;
+	private int priority;
 	/**
 	 * 创建日期
 	 */
@@ -79,10 +79,10 @@ public class Advertisement implements Serializable {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public Integer getPriority() {
+	public int getPriority() {
 		return priority;
 	}
-	public void setPriority(Integer priority) {
+	public void setPriority(int priority) {
 		this.priority = priority;
 	}
 	

@@ -28,7 +28,7 @@ public class News implements Serializable {
 	/**
 	 * 新闻优先值
 	 */
-	private Integer priority;
+	private int priority;
 	/**
 	 * 新闻url,静态页面发布以后才有
 	 */
@@ -46,7 +46,7 @@ public class News implements Serializable {
 	/**
 	 * 点击率
 	 */
-	private Integer clicks;
+	private int clicks;
 	/**
 	 * 关键字
 	 */
@@ -96,10 +96,10 @@ public class News implements Serializable {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public Integer getPriority() {
+	public int getPriority() {
 		return priority;
 	}
-	public void setPriority(Integer priority) {
+	public void setPriority(int priority) {
 		this.priority = priority;
 	}
 	public String getUrl() {
@@ -120,10 +120,10 @@ public class News implements Serializable {
 	public void setPublishDate(Date publishDate) {
 		this.publishDate = publishDate;
 	}
-	public Integer getClicks() {
+	public int getClicks() {
 		return clicks;
 	}
-	public void setClicks(Integer clicks) {
+	public void setClicks(int clicks) {
 		this.clicks = clicks;
 	}
 	public String getKeyWords() {

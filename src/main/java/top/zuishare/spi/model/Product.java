@@ -65,7 +65,7 @@ public class Product implements Serializable{
 	/**
 	 * 排序值（越大排名越前，默认为0）
 	 */
-	private Integer priority;
+	private int priority;
 	
 	//临时变量
 	private String categoryEnName;
@@ -139,10 +139,10 @@ public class Product implements Serializable{
 		this.keyWords = keyWords;
 	}
 	
-	public Integer getPriority() {
+	public int getPriority() {
 		return priority;
 	}
-	public void setPriority(Integer priority) {
+	public void setPriority(int priority) {
 		this.priority = priority;
 	}
 	public Integer getCategoryId() {
