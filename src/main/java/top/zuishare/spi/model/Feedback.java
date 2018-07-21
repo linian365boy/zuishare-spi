@@ -82,6 +82,6 @@ public class Feedback implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return ReflectionToStringBuilder.toStringExclude(this, content);
+		return ReflectionToStringBuilder.toStringExclude(this, "content");
 	}
 }

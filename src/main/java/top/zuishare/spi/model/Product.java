@@ -164,6 +164,6 @@ public class Product implements Serializable{
 	}
 	@Override
 	public String toString() {
-		return ReflectionToStringBuilder.toStringExclude(this, introduce, description);
+		return ReflectionToStringBuilder.toStringExclude(this, "introduce", "description");
 	}
 }

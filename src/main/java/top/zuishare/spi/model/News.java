@@ -172,6 +172,6 @@ public class News implements Serializable {
 
 	@Override
 	public String toString() {
-		return ReflectionToStringBuilder.toStringExclude(this, introduce, bref, content);
+		return ReflectionToStringBuilder.toStringExclude(this, "introduce", "bref", "content");
 	}
 }

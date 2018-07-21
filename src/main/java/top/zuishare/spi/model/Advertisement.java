@@ -114,6 +114,6 @@ public class Advertisement implements Serializable {
 
 	@Override
 	public String toString() {
-		return ReflectionToStringBuilder.toStringExclude(this, comment);
+		return ReflectionToStringBuilder.toStringExclude(this, "comment");
 	}
 }

@@ -176,6 +176,6 @@ public class Company implements Serializable{
 	}
 	@Override
 	public String toString() {
-		return ReflectionToStringBuilder.toStringExclude(this, introduce);
+		return ReflectionToStringBuilder.toStringExclude(this, "introduce");
 	}
 }

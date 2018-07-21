@@ -74,6 +74,6 @@ public class Info implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return ReflectionToStringBuilder.toStringExclude(this, content);
+		return ReflectionToStringBuilder.toStringExclude(this, "content");
 	}
 }
