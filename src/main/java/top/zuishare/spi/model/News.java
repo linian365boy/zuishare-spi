@@ -1,6 +1,7 @@
 package top.zuishare.spi.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
@@ -173,6 +174,6 @@ public class News implements Serializable {
 
 	@Override
 	public String toString() {
-		return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+		return ReflectionToStringBuilder.toStringExclude(this, introduce, bref, content);
 	}
 }
