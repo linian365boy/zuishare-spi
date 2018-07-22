@@ -19,6 +19,10 @@ public class Company implements Serializable{
 	 */
 	private String telPhone;
 	/**
+	 * 子联系人电话
+	 */
+	private String secondTelPhone;
+	/**
 	 * 公司地址
 	 */
 	private String address;
@@ -26,6 +30,10 @@ public class Company implements Serializable{
 	 * 公司邮箱
 	 */
 	private String email;
+	/**
+	 * 子联系人邮箱
+	 */
+	private String secondEmail;
 	/**
 	 * 公司简介
 	 */
@@ -54,6 +62,7 @@ public class Company implements Serializable{
 	 * 联系人
 	 */
 	private String contactUser;
+
 	/**
 	 * 联系人facebbook地址
 	 */
@@ -74,6 +83,11 @@ public class Company implements Serializable{
 	 * 联系人linkedin地址
 	 */
 	private String contactUserlinkedin;
+	/**
+	 * 联系人skyke
+	 */
+	private String contactUserSkype;
+
 	
 	public String getName() {
 		return name;
@@ -174,6 +188,31 @@ public class Company implements Serializable{
 	public void setContactUserinstagram(String contactUserinstagram) {
 		this.contactUserinstagram = contactUserinstagram;
 	}
+
+	public String getSecondTelPhone() {
+		return secondTelPhone;
+	}
+
+	public void setSecondTelPhone(String secondTelPhone) {
+		this.secondTelPhone = secondTelPhone;
+	}
+
+	public String getSecondEmail() {
+		return secondEmail;
+	}
+
+	public void setSecondEmail(String secondEmail) {
+		this.secondEmail = secondEmail;
+	}
+
+	public String getContactUserSkype() {
+		return contactUserSkype;
+	}
+
+	public void setContactUserSkype(String contactUserSkype) {
+		this.contactUserSkype = contactUserSkype;
+	}
+
 	@Override
 	public String toString() {
 		return ReflectionToStringBuilder.toStringExclude(this, "introduce");
